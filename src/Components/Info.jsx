@@ -17,6 +17,8 @@ const Info = () => {
                         <h2 className="text-yellow-500 text-sm font-bold">REVOLUTIONIZING A FINANCE</h2>
                         <h1 className="text-4xl font-bold mt-2">Introducing Virtual Food Grain Assets (VFGAs)</h1>
                         <p className="text-gray-700 mt-4">
+    Soch Global is revolutionizing agricultural finance With Virtual Food Grain Assets (VFGAs), enabling farmers to access capital without the high interest rates and strict collateral demands of traditional loans.
+</p>
                             Soch Global is revolutionizing agriculturalfinance With Virtual Food Grain Assets (VFGAs), enabling farmers to access capital without the high interest rates and strict collateral demands of traditional loans.
                         <h3 className="text-yellow-500 text-sm font-bold mt-6">BENEFITS FOR FARMERS</h3>
                         <div className="flex flex-wrap gap-5 mt-4">
