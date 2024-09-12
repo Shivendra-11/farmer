@@ -2,7 +2,7 @@ import React from 'react';
 
 const Verticalscroll = () => {
   return (
-    <div className="bg-[#F8F7F0]   font-sans min-h-screen relative">
+    <div className="bg-[#F8F7F0] mt-14  font-sans min-h-screen relative">
       {/* Heading and Paragraph Container */}
       <div className="text-center py-20 text-3xl  ">
         <p className="text-green-500 mb-4">How it Works</p> {/* Adjust margin-bottom to control space */}

@@ -6,7 +6,7 @@ const Info = () => {
             <img 
                 src="./images/bg.png" 
                 alt="Background Image" 
-                className="absolute inset-0 w-full h-full object-cover z-[1]" 
+                className="absolute inset-0 w-full h-full object-cover z-[-1]" 
             />
             
             <div 
@@ -21,7 +21,7 @@ const Info = () => {
 </p>
                             Soch Global is revolutionizing agriculturalfinance With Virtual Food Grain Assets (VFGAs), enabling farmers to access capital without the high interest rates and strict collateral demands of traditional loans.
                         <h3 className="text-yellow-500 text-sm font-bold mt-6">BENEFITS FOR FARMERS</h3>
-                        <div className="flex flex-wrap gap-5 mt-4">
+                        <div className="flex flex-wrap gap-2 mt-4">
                             <span className="text-green-700 px-4 py-2 border-2 bg-green-100 rounded-full  border-green-500  transition-all duration-300">Financial Benefits</span>
                             <span className="text-green-700 px-4 py-2  border-2 rounded-full bg-green-100  border-green-500 transition-all duration-300">Risk Management</span>
                             <span className="text-green-700 px-8 py-2  border-2 rounded-full  border-green-500 bg-green-100 transition-all duration-300">Sustainability</span>
