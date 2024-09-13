@@ -6,7 +6,7 @@ const Info = () => {
             <img 
                 src="./images/bg.png" 
                 alt="Background Image" 
-                className="absolute inset-0 w-full h-full object-cover z-[-1]" 
+                className="absolute inset-0 w-[70%] h-full object-cover z-[-1]" 
             />
             
             <div 
