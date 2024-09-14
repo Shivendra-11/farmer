@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
+
 const Home = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -49,44 +50,22 @@ const Home = () => {
             </button>
           </div>
 
-<div className="hidden lg:flex md:flex justify-center items-center space-x-4 text-white">
-  <a 
-    href="https://twitter.com" 
-    target="_blank" 
-    rel="noopener noreferrer" 
-    aria-label="Twitter" 
-    className="bg-transparent border-2 border-white rounded-full p-2 hover:bg-white hover:text-black transition-all duration-300"
-  >
-    <i className="fab fa-twitter text-sm"></i> {/* Even smaller size */}
-  </a>
-  <a 
-    href="https://facebook.com" 
-    target="_blank" 
-    rel="noopener noreferrer" 
-    aria-label="Facebook" 
-    className="bg-transparent border-2 border-white rounded-full p-2 hover:bg-white hover:text-black transition-all duration-300"
-  >
-    <i className="fab fa-facebook-f text-sm"></i> {/* Even smaller size */}
-  </a>
-  <a 
-    href="https://instagram.com" 
-    target="_blank" 
-    rel="noopener noreferrer" 
-    aria-label="Instagram" 
-    className="bg-transparent border-2 border-white rounded-full p-2 hover:bg-white hover:text-black transition-all duration-300"
-  >
-    <i className="fab fa-instagram text-sm"></i> {/* Even smaller size */}
-  </a>
-  <a 
-    href="https://linkedin.com" 
-    target="_blank" 
-    rel="noopener noreferrer" 
-    aria-label="LinkedIn" 
-    className="bg-transparent border-2 border-white rounded-full p-2 hover:bg-white hover:text-black transition-all duration-300"
-  >
-    <i className="fab fa-linkedin-in text-sm"></i> {/* Even smaller size */}
-  </a>
-</div>
+          {/* Social Media Icons (Hidden on medium screens) */}
+          <div className="hidden lg:flex md:flex justify-center items-center space-x-4 text-white">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="bg-transparent rounded-full p-2">
+              <i className="fab fa-twitter text-xl"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="bg-transparent rounded-full p-2">
+              <i className="fab fa-facebook-f text-xl"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="bg-transparent rounded-full p-2">
+              <i className="fab fa-instagram text-xl"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="bg-transparent rounded-full p-2">
+              <i className="fab fa-linkedin-in text-xl"></i>
+            </a>
+          </div>
+
           {/* Navigation Links (Hidden on mobile) */}
           <nav className="hidden lg:flex md:flex space-x-6 md:space-x-8 lg:space-x-9 text-white text-sm md:text-xs lg:text-base"> {/* Adjusted text size for medium screens */}
             <a href="#" className="hover:underline">Home</a>
@@ -119,7 +98,7 @@ const Home = () => {
           </nav>
 
           {/* Contact Info and Login/Register Button (Hidden on mobile) */}
-          <div className="hidden lg:flex md:flex items-center space-x-8 md:space-x-12 lg:space-x-24 pr-1 text-sm md:text-xs lg:text-base">
+          <div className="hidden lg:flex md:flex items-center space-x-3 md:space-x-12 lg:space-x-24 pr-1 text-sm md:text-xs lg:text-base">
             <button className="bg-transparent text-green-600 px-4 py-2 md:px-4 md:py-2 rounded-md border border-green-600 backdrop-blur-md transition-all duration-300 hover:text-white">
               Login / Register
             </button>
@@ -139,7 +118,7 @@ const Home = () => {
 
         {/* Small Screen Menu (Visible on mobile) */}
         <div
-          className={`lg:hidden md:hidden fixed top-[80px] md:top-[90px] left-0 h-[calc(100vh-80px)] md:h-[calc(100vh-90px)] w-full bg-white text-black p-6 z-20 space-y-10 transition-transform transform ${menuOpen ? 'translate-x-0' : '-translate-x-full'}`}
+          className={`lg:hidden md:hidden fixed top-[80px] md:top-[90px] left-0 h-[calc(100vh-80px)] md:h-[calc(100vh-90px)] w-[400px] bg-white text-black p-6 z-20 space-y-10 transition-transform transform ${menuOpen ? 'translate-x-0' : '-translate-x-full'}`}
         >
           {/* Prevent scrolling when the menu is open */}
           <nav className="flex flex-col space-y-4">
@@ -151,8 +130,8 @@ const Home = () => {
           </nav>
 
           {/* Login/Register and Contact Info */}
-          <div className="flex flex-col space-y-4">
-            <button className="bg-transparent text-green-600 px-6 py-3 rounded-md border border-green-600 transition-all duration-300 hover:text-white" onClick={toggleMenu}>
+          <div className="flex flex-col space-y-2 ">
+            <button className="bg-transparent text-green-600  w-[280px] py-3 rounded-md border border-green-600 transition-all duration-300" onClick={toggleMenu}>
               Login / Register
             </button>
             <div className="text-black flex items-center space-x-3">
@@ -183,21 +162,16 @@ const Home = () => {
 
         {/* Hero Section */}
         <div className="flex flex-col items-center justify-center mt-[140px] text-center text-white">
-  <div className="py-7 leading-7">
-    <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold">Empowering Farmers</h1>
-    <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-yellow-500">Transforming Agriculture</h2>
-    <img 
-      className="w-[70%] md:w-[50%] sm:w-[50%] lg:w-[50%] max-w-[421px] mt-3" 
-      src="./images/sign.png" 
-      alt="Signature" 
-    />
+          <div className="py-7 leading-7">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold">Empowering Farmers</h1>
+            <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-yellow-500">Transforming Agriculture</h2>
+            <img className="w-[60%] md:w-[55%] lg:w-[50%] max-w-[421px] mt-3" src="./images/sign.png" alt="Signature" />
 
-    <button className="mt-9 bg-green-600 text-white px-6 md:px-8 py-2 md:py-3 rounded-md border border-green-600 backdrop-blur-3xl transition-all duration-300 hover:text-white">
-      Join the VFGA Movement
-    </button>
-  </div>
-</div>
-
+            <button className="mt-9 bg-green-600 text-white px-6 md:px-8 py-2 md:py-3 rounded-md border border-green-600 backdrop-blur-3xl transition-all duration-300 hover:text-white">
+              Join the VFGA Movement
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
