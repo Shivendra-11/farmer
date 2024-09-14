@@ -34,7 +34,7 @@ const Info = () => {
                     {/* Images visible on larger screens */}
                     <div className="hidden md:flex flex-col md:flex-row items-center gap-x-2">
                         <div className="flex flex-col">
-                            <img src="./images/smallbg.png" alt="Farmer working in a field" className="rounded-lg shadow-lg w-[300px] h-[410px] object-cover transition-all duration-500 border border-light-green-300" />
+                            <img src="./images/smallbg.png" alt="Farmer working in a field" className="rounded-lg  md:w-[200px] md:h-[220px] shadow-lg  lg:h-[410px]  object-cover transition-all duration-500 border border-light-green-300" />
                             <div className="text-center mt-4">
                                 <h2 className="text-4xl font-bold">20K+</h2>
                                 <p className="text-green-600">PARTNERS WORLDWIDE</p>
@@ -43,12 +43,12 @@ const Info = () => {
                         <img 
                             src="./images/bigimg.png" 
                             alt="Tractor in a field" 
-                            className="rounded-tr-[3rem] shadow-lg w-[250px] h-[500px] object-cover transition-all duration-500 border border-light-green-300" 
+                            className="rounded-tr-[3rem] shadow-lg lg:w-[250px] lg:h-[500px] md:w-[200px]  md:h-[310px] md:mr-8 object-cover transition-all duration-500 border border-light-green-300" 
                         />
                     </div>
 
-                    {/* Text only on medium screens */}
-                    <div className="md:hidden  flex lg:flex-col items-center text-center">
+                    {/* Text only on small screens */}
+                    <div className="md:hidden flex lg:flex-col items-center   text-center">
                         <h2 className="text-4xl font-bold">20K+</h2>
                         <p className="text-green-600">PARTNERS WORLDWIDE</p>
                     </div>
