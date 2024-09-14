@@ -17,7 +17,7 @@ const Verticalscroll = () => {
         >
           {/* Card 1 */}
           <li id="card1" className="card sticky pt-[calc(1*1.5em)] top-0">
-            <div className="box-border shadow-[0_0_30px_0_rgba(0,0,0,0.3)] lg:h-[70vh] lg:w-[900px] sm:w-[45vw] sm:h-[50vh] flex justify-center items-center transition-all duration-500 rounded-[40px] mx-auto relative">
+            <div className="box-border shadow-[0_0_30px_0_rgba(0,0,0,0.3)] lg:h-[70vh] lg:w-[900px] sm:w-[65vw] sm:h-[50vh] flex justify-center items-center transition-all duration-500 rounded-[40px] mx-auto relative">
               <img
                 src="./images/vertical1.png"
                 alt="Card 1"
@@ -29,7 +29,7 @@ const Verticalscroll = () => {
 
           {/* Card 2 */}
           <li id="card2" className="card sticky pt-[calc(2*1.5em)] top-0">
-            <div className="box-border shadow-[0_0_30px_0_rgba(0,0,0,0.3)] lg:h-[70vh] lg:w-[900px] sm:w-[45vw] sm:h-[50vh] flex justify-center items-center transition-all duration-500 rounded-[40px] mx-auto relative">
+            <div className="box-border shadow-[0_0_30px_0_rgba(0,0,0,0.3)] lg:h-[70vh] lg:w-[900px] sm:w-[65vw] sm:h-[50vh] flex justify-center items-center transition-all duration-500 rounded-[40px] mx-auto relative">
               <img
                 src="./images/vertical2.png"
                 alt="Card 2"
@@ -41,7 +41,7 @@ const Verticalscroll = () => {
 
           {/* Card 3 */}
           <li id="card3" className="card sticky pt-[calc(3*1.5em)] top-0">
-            <div className="box-border shadow-[0_0_30px_0_rgba(0,0,0,0.3)] lg:h-[70vh] lg:w-[900px] sm:w-[45vw] sm:h-[50vh] flex justify-center items-center transition-all duration-500 rounded-[40px] mx-auto relative">
+            <div className="box-border shadow-[0_0_30px_0_rgba(0,0,0,0.3)] lg:h-[70vh] lg:w-[900px] sm:w-[65vw] sm:h-[50vh] flex justify-center items-center transition-all duration-500 rounded-[40px] mx-auto relative">
               <img
                 src="./images/vertical3.png"
                 alt="Card 3"
@@ -53,7 +53,7 @@ const Verticalscroll = () => {
 
           {/* Card 4 */}
           <li id="card4" className="card sticky pt-[calc(4*1.5em)] top-0">
-            <div className="box-border shadow-[0_0_30px_0_rgba(0,0,0,0.3)] lg:h-[70vh] lg:w-[900px] sm:w-[45vw] sm:h-[50vh] flex justify-center items-center transition-all duration-500 rounded-[40px] mx-auto relative">
+            <div className="box-border shadow-[0_0_30px_0_rgba(0,0,0,0.3)] lg:h-[70vh] lg:w-[900px] sm:w-[65vw] sm:h-[50vh] flex justify-center items-center transition-all duration-500 rounded-[40px] mx-auto relative">
               <img
                 src="./images/vertical5.png"
                 alt="Card 4"
