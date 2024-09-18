@@ -26,22 +26,22 @@ const FaqItem = ({ question, answer }) => {
 const Faq = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-white">
-      <div className="bg-green-500 p-8 md:w-1/2 flex flex-col items-center">
-        <div className="relative mb-4">
+      {/* Image section */}
+      <div className="relative p-8 md:w-1/2 flex flex-col items-center "> 
+        <div className="relative  left-0  md:w-auto"> 
           <img
-            src="https://placehold.co/400x400"
+            src="./images/greenimg.png"
             alt="Person holding a bunch of fresh green vegetables"
-            className="rounded-lg shadow-lg w-full h-auto"
+            className="rounded-lg shadow-lg w-[500px]  h-[600px]"
           />
         </div>
-        <button className="mt-4 bg-green-700 hover:bg-green-800 text-white py-2 px-4 rounded transition duration-300">
-          Read More
-        </button>
       </div>
+
+      {/* FAQ section */}
       <div className="p-8 md:w-1/2">
         <h2 className="text-yellow-500 text-lg">Frequently Asked Questions</h2>
         <h1 className="text-3xl font-bold mt-2">You've Any Questions?</h1>
-        <div className="mt-6 space-y-4">
+        <div className="mt-4 space-y-4">
           <FaqItem
             question="What is Soch Global VFGA?"
             answer="Soch Global VFGA is a platform for virtual farming and gardening activities."
@@ -72,7 +72,7 @@ const SustainableAgriculture = () => {
       <Faq />
 
       {/* Text Section - Added right after the FAQ section with margin-top */}
-      <div className="flex justify-center items-center mt-11 pl-8 bg-white">
+      <div className="flex justify-center items-center pl-8 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <div className="flex flex-col md:flex-row items-start md:items-center">
             {/* Left Column */}
