@@ -1,103 +1,87 @@
 import React from 'react';
-import { FaTwitter, FaFacebookF, FaPinterest, FaInstagram, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaPaperPlane } from 'react-icons/fa';
 
-const Footer = () => {
+const Feature = () => {
     return (
-        <div className="bg-custom-gray text-gray-300 py-12">
-            <div className="container mx-auto max-w-[75%]">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                    {/* Logo section with white background and rounded corners */}
-                    <div className="footer-section">
-                        <div className="bg-white p-1 rounded-lg inline-block">
-                            <img alt="Soach logo" className='w-32' src="./images/logo.png"  />
+        <div className="flex w-full justify-center mt-12 bg-gray-100 items-center min-h-screen">
+            <div className="mx-auto py-11 max-w-[59rem] flex flex-col md:flex-row">
+                {/* Left Section with Image and Testimonial */}
+                <div  className="w-full md:w-1/2 flex flex-col items-center md:items-start mt-6">
+                    <img
+                        src="./images/Feature.png"
+                        alt="A combine harvester working in a golden wheat field during sunset"
+                        className="rounded-lg shadow-md w-[390px]"
+                    />
+                    {/* Add gap between image and testimonial */}
+                    <div className="mt-4 p-3 bg-white rounded-lg shadow-md flex items-center max-w-[400px]">
+                        <div className="text-yellow-500 text-2xl mr-2">
+                            <i className="fas fa-star"></i>
                         </div>
-                        <p className="mt-2 mb-4">
-                            There are many variations of passages of lorem ipsum available, but the majority suffered.
+                        <p className="text-gray-700">
+                            "VFGA has been a lifeline for our smallholder farmers, providing them with the resources they need to thrive."
                         </p>
-                        <div className="flex space-x-3">
-                            <a href="#" className="text-gray-300 hover:text-green-500"><FaTwitter /></a>
-                            <a href="#" className="text-gray-300 hover:text-green-500"><FaFacebookF /></a>
-                            <a href="#" className="text-gray-300 hover:text-green-500"><FaPinterest /></a>
-                            <a href="#" className="text-gray-300 hover:text-green-500"><FaInstagram /></a>
-                        </div>
-                    </div>
-
-                    {/* Explore section */}
-                    <div className="footer-section px-20 ">
-                        <h3 className="text-lg font-semibold mb-1 relative">
-                            Explore
-                            <span className="absolute left-0 bottom-[-5px] block w-5 h-0.5 bg-green-500"></span>
-                        </h3>
-                        <ul className="space-y-2">
-                            <li><a href="#" className="hover:underline">About</a></li>
-                            <li><a href="#" className="hover:underline">Services</a></li>
-                            <li><a href="#" className="hover:underline">Our Projects</a></li>
-                            <li><a href="#" className="hover:underline">Meet the Farmers</a></li>
-                            <li><a href="#" className="hover:underline">Latest News</a></li>
-                            <li><a href="#" className="hover:underline">Contact</a></li>
-                        </ul>
-                    </div>
-
-                    {/* News section */}
-                    <div className="footer-section">
-                        <h3 className="text-lg font-semibold mb-3 relative">
-                            News
-                            <span className="absolute left-0 bottom-[-5px] block w-5 h-0.5 bg-green-500"></span>
-                        </h3>
-                        <div className="space-y-2">
-                            <div className="footer-news-item">
-                                <a href="#" className="font-bold hover:underline">Bringing Food Production Back To Cities</a>
-                                <span className="block text-green-500 text-sm">July 5, 2022</span>
-                            </div>
-                            <div className="footer-news-item">
-                                <a href="#" className="font-bold hover:underline">The Future of Farming, Smart Irrigation Solutions</a>
-                                <span className="block text-green-500 text-sm">July 5, 2022</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Contact section */}
-                    <div className="footer-section px-16">
-                        <h3 className="text-lg font-semibold mb-3 relative">
-                            Contact
-                            <span className="absolute left-0 bottom-[-5px] block w-5 h-0.5 bg-green-500"></span>
-                        </h3>
-                        <div className="space-y-2">
-                            <div className="flex items-center">
-                                <FaPhoneAlt className="mr-2" />
-                                <a href="tel:6668880000" className="hover:underline">666 888 0000</a>
-                            </div>
-                            <div className="flex items-center">
-                                <FaEnvelope className="mr-2" />
-                                <a href="mailto:needhelp@soachglobal.com" className="hover:underline">needhelp@soachglobal.com</a>
-                            </div>
-                            <div className="flex items-center">
-                                <FaMapMarkerAlt className="mr-2" />
-                                613/P-58 sant kabir nagar, New Delhi
-                            </div>
-                            <div className="flex mt-4">
-                                <input placeholder="Your Email Address" type="email" className="p-2 rounded-l-md border-none outline-none" />
-                                <button className="bg-green-500 text-gray-900 p-2 rounded-r-md flex items-center">
-                                    <FaPaperPlane />
-                                </button>
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </div>
 
-            {/* Footer bottom section with black background */}
-            <div className="bg-black text-gray-400 py-4">
-                <div className="text-center flex justify-between px-40 border-t border-gray-700 mt-8">
-                    <p className='mt-6'>© All Copyright 2024 by shawonetc Themes</p>
+                {/* Right Section with Content */}
+                <div className="w-full md:w-1/2 p-4">
+                    <h2 className="text-yellow-500 text-lg font-bold">WHY CHOOSE US</h2>
+                    <h1 className="text-4xl font-bold text-gray-900 mt-2">
+                        Empowering Farmers,
+                        <br />
+                        Transforming Markets
+                    </h1>
+                    <p className="text-gray-700 mt-4">
+                        Soch Global VFGA is more than just a platform; it's a catalyst for positive change in the agricultural sector. By connecting farmers directly with consumers, we're creating a more equitable and sustainable food system. Our innovative approach empowers farmers, enhances market access, and promotes sustainable practices.
+                    </p>
+
+                    {/* Key Features */}
                     <div className="mt-6">
-                        <a href="#" className="hover:underline">Terms of Use</a> | 
-                        <a href="#" className="hover:underline">Privacy Policy</a>
+                        <div className="flex items-start mt-4">
+                            <div className="text-green-500 text-2xl mr-4">
+                                <i className="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h3 className="text-lg font-bold text-gray-900">
+                                    Enhanced Financial Inclusion
+                                </h3>
+                                <p className="text-gray-700">
+                                    VFGAs provide farmers with access to immediate financing, reducing their reliance on traditional lenders that often come with high interest rates and stringent collateral requirements.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="flex items-start mt-4">
+                            <div className="text-green-500 text-2xl mr-4">
+                                <i className="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h3 className="text-lg font-bold text-gray-900">
+                                    Sustainable Agriculture
+                                </h3>
+                                <p className="text-gray-700">
+                                    By promoting sustainable farming practices, VFGAs contribute to environmental conservation and long-term agricultural productivity.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="flex items-start mt-4">
+                            <div className="text-green-500 text-2xl mr-4">
+                                <i className="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h3 className="text-lg font-bold text-gray-900">
+                                    Market Access
+                                </h3>
+                                <p className="text-gray-700">
+                                    VFGAs provide farmers with better access to markets, allowing them to reach a wider audience and secure better prices for their produce.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     );
-}
+};
 
-export default Footer;
+export default Feature;

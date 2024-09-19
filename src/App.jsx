@@ -9,6 +9,8 @@ import Feature from './Components/Feature';
 import Projects from './Components/Projects';
 import Footer from './Components/Footer';
 import Query from './Components/Query';
+import Innovation from './Components/Innovation';
+import Timeline from './Components/Timeline';
 // import Home from './Components/Home'
 
 function App() {
@@ -21,9 +23,14 @@ function App() {
     <Info/>
     <Verticalscroll/>
     <Faq/>
+    <Timeline/>
     <Feature/>
+  
     <Projects/>
+    <img src="./images/video.png" alt="Video"  className='pb-8' />
+    <Innovation/>
     <Query/>
+   
     <Footer/>
     
     </>

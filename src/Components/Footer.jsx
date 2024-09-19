@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaTwitter, FaFacebookF, FaPinterest, FaInstagram, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaPaperPlane } from 'react-icons/fa';
+import { FaTwitter, FaFacebookF, FaPinterest, FaInstagram, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaPaperPlane, FaSearch } from 'react-icons/fa';
 
 const Footer = () => {
     return (
@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="bg-custom-gray text-gray-300 py-12">
                 <div className="container mx-auto max-w-[75%]">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                        {/* Logo section with white background and rounded corners */}
+                        {/* Logo section */}
                         <div className="footer-section">
                             <div className="bg-white p-1 rounded-lg inline-block">
                                 <img alt="Soach logo" className='w-32' src="./images/logo.png"  />
@@ -24,21 +24,40 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        {/* Explore section */}
-                        <div className="footer-section px-20">
-                            <h3 className="text-lg font-semibold mb-1 relative">
-                                Explore
-                                <span className="absolute left-0 bottom-[-5px] block w-5 h-0.5 bg-green-500"></span>
-                            </h3>
-                            <ul className="space-y-2">
-                                <li><a href="#" className="hover:underline">About</a></li>
-                                <li><a href="#" className="hover:underline">Services</a></li>
-                                <li><a href="#" className="hover:underline">Our Projects</a></li>
-                                <li><a href="#" className="hover:underline">Meet the Farmers</a></li>
-                                <li><a href="#" className="hover:underline">Latest News</a></li>
-                                <li><a href="#" className="hover:underline">Contact</a></li>
-                            </ul>
-                        </div>
+                        {/* Explore section with icon */}
+                        <div className="footer-section px-14">
+    <h3 className="text-lg font-semibold mb-1 relative flex items-center">
+        Explore
+        <span className="absolute left-0 bottom-[-5px] block w-5 h-0.5 bg-green-500"></span>
+    </h3>
+    <ul className='py-2' >
+        <li className="flex items-center">
+            <img src="./images/leaf.png" alt="Icon" className="w-4 h-4 mr-2" />
+            <a href="#" className="hover:underline">About</a>
+        </li>
+        <li className="flex items-center">
+        <img src="./images/leaf.png" alt="Icon" className="w-4 h-4 mr-2" />
+        <a href="#" className="hover:underline">Services</a>
+        </li>
+        <li className="flex items-center">
+        <img src="./images/leaf.png" alt="Icon" className="w-4 h-4 mr-2" />
+        <a href="#" className="hover:underline">Our Projects</a>
+        </li>
+        <li className="flex items-center">
+        <img src="./images/leaf.png" alt="Icon" className="w-4 h-4 mr-2" />
+        <a href="#" className="hover:underline">Meet the Farmers</a>
+        </li>
+        <li className="flex items-center">
+        <img src="./images/leaf.png" alt="Icon" className="w-4 h-4 mr-2" />
+        <a href="#" className="hover:underline">Latest News</a>
+        </li>
+        <li className="flex items-center">
+        <img src="./images/leaf.png" alt="Icon" className="w-4 h-4 mr-2" />
+        <a href="#" className="hover:underline">Contact</a>
+        </li>
+    </ul>
+</div>
+
 
                         {/* News section */}
                         <div className="footer-section">
@@ -90,11 +109,10 @@ const Footer = () => {
             </div>
 
             {/* Footer Bottom Section */}
-            {/* <hr /> */}
-            <div className="bg-custom-back text-gray-400  border-t  ">
+            <div className="bg-custom-back text-gray-400 border-t">
                 <div className="text-center flex justify-between px-52 py-6 mt-6">
-                    <p >© All Copyright 2024 by shawonetc Themes</p>
-                    <div className="">
+                    <p>© All Copyright 2024 by shawonetc Themes</p>
+                    <div>
                         <a href="#" className="hover:underline">Terms of Use</a> | 
                         <a href="#" className="hover:underline">Privacy Policy</a>
                     </div>
