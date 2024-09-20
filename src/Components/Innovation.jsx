@@ -44,7 +44,7 @@ const Innovation = () => {
                             <FaShareAlt />
                         </button>
                         <div>
-                            <h3 className="text-sm font-semibold">/FGA</h3>
+                            <h3 className="text-sm font-semibold">VFGA</h3>
                             <p className="text-xs text-gray-600">Virtual Food Grain Asset</p>
                         </div>
                     </div>
