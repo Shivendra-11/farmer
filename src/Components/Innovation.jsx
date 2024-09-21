@@ -4,22 +4,22 @@ import { FaShareAlt } from 'react-icons/fa';
 const Innovation = () => {
     return (
         <div className="text-center py-24 pb-32">
-            <h2 className="text-yellow-500 text-sm">AWARDS & RECOGNITION</h2>
-            <h1 className="text-3xl font-bold mt-2">Honored for Innovation and Impact</h1>
+            <h2 className="text-yellow-500 text-md md:text-sm">AWARDS & RECOGNITION</h2>
+            <h1 className="text-4xl md:text-3xl font-bold mt-2">Honored for Innovation and Impact</h1>
 
-            <div className="flex justify-center py-8 mt-16 space-x-32">
+            <div className="flex flex-col md:flex-row justify-center items-center py-8 mt-16 space-y-6 md:space-y-0 md:space-x-20">
                 {/* First Award */}
                 <div className="shadow-lg rounded-lg overflow-hidden w-72 h-80 relative">
-                    <div className="p-4  ">
+                    <div className="p-4">
                         <img 
                             src="./images/news.png" 
                             alt="Asia Business Outlook magazine cover with a person and article" 
-                            className="w-full  pr-6 h-full object-cover rounded-lg" 
+                            className="w-full h-full object-cover rounded-lg" 
                         />
                     </div>
                     {/* Corner div for share button and text */}
-                    <div className="absolute bottom-1 right-2  bg-white p-2 rounded-lg z-10 flex items-center space-x-5 shadow-md">
-                        <button className="bg-green-500  text-white rounded-full p-2">
+                    <div className="absolute bottom-1 right-2 bg-white p-2 rounded-lg z-10 flex items-center space-x-5 shadow-md">
+                        <button className="bg-green-500 text-white rounded-full p-2">
                             <FaShareAlt />
                         </button>
                         <div>

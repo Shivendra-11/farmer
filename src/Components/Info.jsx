@@ -4,10 +4,10 @@ const Info = () => {
     return (
         <div className="relative h-screen overflow-hidden">
             <img 
-                src="./images/bg.png" 
-                alt="Background Image" 
-                className="absolute inset-0 w-[70%] h-full object-cover z-[-1]" 
-            />
+    src="./images/bg.png" 
+    alt="Background Image" 
+    className="absolute inset-0 top-6 w-[70%] h-[100%] object-cover z-[10] mix-blend-darken brightness-100 saturate-150"
+/>
             
             <div 
                 className="relative flex flex-col md:flex-row items-center py-32 justify-between bg-white bg-opacity-80 max-w-[1000px] mx-auto space-y-8 md:space-y-0 md:space-x-12 rounded-lg transition-all duration-500 z-[2]" 

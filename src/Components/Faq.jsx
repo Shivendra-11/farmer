@@ -5,15 +5,19 @@ const FaqItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="bg-gray-100 rounded-lg shadow-md">
+    <div className="bg-custom-green rounded-lg shadow-md">
       <div
-        className="p-4 flex justify-between items-center cursor-pointer hover:bg-gray-200 transition-all duration-300"
+        className="p-3 flex justify-between items-center cursor-pointer hover:bg-gray-200 transition-all duration-300"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="font-semibold">{question}</span>
-        <i
-          className={`fas fa-chevron-${isOpen ? "up" : "right"} text-yellow-500`}
-        ></i>
+        <span className="font-semibold text-lg md:text-xl">{question}</span>
+        
+        {/* Green background div for the arrow */}
+        <div className="bg-green-500 text-white p-2 px-4 rounded-md transition-all duration-300">
+          <i
+            className={`fas fa-chevron-${isOpen ? "down" : "right"}`}
+          ></i>
+        </div>
       </div>
       {isOpen && (
         <div className="p-4 border-t border-gray-200">{answer}</div>
@@ -27,7 +31,7 @@ const Faq = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between bg-white">
       {/* Image section */}
-      <div className="relative p-8 md:w-[60%] flex flex-col items-center">
+      <div className="relative p-8 md:w-[60%] flex flex-col items-center hidden md:flex">
         {/* Green Image */}
         <div className="relative right-5 w-full h-[690px]">
           <img
@@ -45,12 +49,11 @@ const Faq = () => {
           <button className="absolute top-[calc(20%+58%)] left-[33rem] bg-green-500 text-white font-bold py-3 px-6 rounded transition duration-300 hover:bg-green-600 z-20">
            Read More
           </button>
-
         </div>
       </div>
 
       {/* FAQ section */}
-      <div className=  "  p-12 md:w-1/2">
+      <div className="p-8 md:w-1/2">
         <h2 className="text-yellow-500 text-lg">Frequently Asked Questions</h2>
         <h1 className="text-3xl font-bold mt-2">You've Any Questions?</h1>
         <div className="mt-2 space-y-8">
@@ -84,7 +87,7 @@ const SustainableAgriculture = () => {
       <Faq />
 
       {/* Text Section - Added right after the FAQ section with reduced margin */}
-      <div className="flex justify-center items-center mt-6 pl-8 bg-white">
+      <div className="flex justify-center items-center mt-1 pl-24 ">
         <div className="max-w-4xl mx-auto px-4">
           <div className="flex flex-col md:flex-row items-start md:items-center">
             {/* Left Column */}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaTwitter, FaFacebookF, FaPinterest, FaInstagram, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaPaperPlane, FaSearch } from 'react-icons/fa';
+import { FaTwitter, FaFacebookF, FaPinterest, FaInstagram, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaPaperPlane } from 'react-icons/fa';
 
 const Footer = () => {
     return (
@@ -9,9 +9,9 @@ const Footer = () => {
                 <div className="container mx-auto max-w-[75%]">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                         {/* Logo section */}
-                        <div className="footer-section">
+                        <div className="footer-section flex flex-col">
                             <div className="bg-white p-1 rounded-lg inline-block">
-                                <img alt="Soach logo" className='w-32' src="./images/logo.png"  />
+                                <img alt="Soach logo" className='w-32' src="./images/logo.png" />
                             </div>
                             <p className="mt-2 mb-4">
                                 There are many variations of passages of lorem ipsum available, but the majority suffered.
@@ -25,42 +25,23 @@ const Footer = () => {
                         </div>
 
                         {/* Explore section with icon */}
-                        <div className="footer-section px-14">
-    <h3 className="text-lg font-semibold mb-1 relative flex items-center">
-        Explore
-        <span className="absolute left-0 bottom-[-5px] block w-5 h-0.5 bg-green-500"></span>
-    </h3>
-    <ul className='py-2' >
-        <li className="flex items-center">
-            <img src="./images/leaf.png" alt="Icon" className="w-4 h-4 mr-2" />
-            <a href="#" className="hover:underline">About</a>
-        </li>
-        <li className="flex items-center">
-        <img src="./images/leaf.png" alt="Icon" className="w-4 h-4 mr-2" />
-        <a href="#" className="hover:underline">Services</a>
-        </li>
-        <li className="flex items-center">
-        <img src="./images/leaf.png" alt="Icon" className="w-4 h-4 mr-2" />
-        <a href="#" className="hover:underline">Our Projects</a>
-        </li>
-        <li className="flex items-center">
-        <img src="./images/leaf.png" alt="Icon" className="w-4 h-4 mr-2" />
-        <a href="#" className="hover:underline">Meet the Farmers</a>
-        </li>
-        <li className="flex items-center">
-        <img src="./images/leaf.png" alt="Icon" className="w-4 h-4 mr-2" />
-        <a href="#" className="hover:underline">Latest News</a>
-        </li>
-        <li className="flex items-center">
-        <img src="./images/leaf.png" alt="Icon" className="w-4 h-4 mr-2" />
-        <a href="#" className="hover:underline">Contact</a>
-        </li>
-    </ul>
-</div>
-
+                        <div className="footer-section flex flex-col px-14">
+                            <h3 className="text-lg font-semibold mb-1 relative flex items-center">
+                                Explore
+                                <span className="absolute left-0 bottom-[-5px] block w-5 h-0.5 bg-green-500"></span>
+                            </h3>
+                            <ul className='py-2'>
+                                {['About', 'Services', 'Our Projects', 'Meet the Farmers', 'Latest News', 'Contact'].map(item => (
+                                    <li className="flex items-center" key={item}>
+                                        <img src="./images/leaf.png" alt="Icon" className="w-4 h-4 mr-2" />
+                                        <a href="#" className="hover:underline">{item}</a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
 
                         {/* News section */}
-                        <div className="footer-section">
+                        <div className="footer-section flex flex-col">
                             <h3 className="text-lg font-semibold mb-3 relative">
                                 News
                                 <span className="absolute left-0 bottom-[-5px] block w-5 h-0.5 bg-green-500"></span>
@@ -78,7 +59,7 @@ const Footer = () => {
                         </div>
 
                         {/* Contact section */}
-                        <div className="footer-section px-16">
+                        <div className="footer-section flex flex-col px-16">
                             <h3 className="text-lg font-semibold mb-3 relative">
                                 Contact
                                 <span className="absolute left-0 bottom-[-5px] block w-5 h-0.5 bg-green-500"></span>
@@ -94,7 +75,7 @@ const Footer = () => {
                                 </div>
                                 <div className="flex items-center">
                                     <FaMapMarkerAlt className="mr-2" />
-                                    613/P-58 sant kabir nagar, New Delhi
+                                    613/P-58 Sant Kabir Nagar, New Delhi
                                 </div>
                                 <div className="flex mt-4">
                                     <input placeholder="Your Email Address" type="email" className="p-2 rounded-l-md border-none outline-none" />
@@ -110,8 +91,8 @@ const Footer = () => {
 
             {/* Footer Bottom Section */}
             <div className="bg-custom-back text-gray-400 border-t">
-                <div className="text-center flex justify-between px-52 py-6 mt-6">
-                    <p>© All Copyright 2024 by shawonetc Themes</p>
+                <div className="text-center flex flex-col md:flex-row justify-between px-52 py-6 mt-6">
+                    <p>© All Copyright 2024 by Shawonetc Themes</p>
                     <div>
                         <a href="#" className="hover:underline">Terms of Use</a> | 
                         <a href="#" className="hover:underline">Privacy Policy</a>

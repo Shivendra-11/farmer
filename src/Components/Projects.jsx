@@ -11,32 +11,30 @@ const Projects = () => {
 
             {/* Subheading and Grid */}
             <div className="mt-16 mb-10">
-                <div className="grid grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {/* First row (2 images on top) */}
-                    <div className="col-span-1">
+                    <div className="col-span-1 md:col-span-1">
                         <div className="w-full h-80 relative">
                             <img
                                 src="./images/p1.png"
                                 alt="Farmer Empowerment"
                                 className="w-full h-full object-cover"
                             />
-                            
                         </div>
                     </div>
-                    <div className="col-span-2">
+                    <div className="col-span-1 md:col-span-2">
                         <div className="w-full h-80 relative">
                             <img
-                               src="./images/p2.png"
+                                src="./images/p2.png"
                                 alt="Sustainable Horticulture"
                                 className="w-full h-full object-cover"
                             />
-                            
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className="grid grid-cols-3 gap-6 mb-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
                 {/* Second row (3 images) */}
                 <div className="col-span-1">
                     <div className="w-full h-80 relative">
@@ -45,7 +43,6 @@ const Projects = () => {
                             alt="Mechanized Farming"
                             className="w-full h-full object-cover"
                         />
-                        
                     </div>
                 </div>
                 <div className="col-span-1">
@@ -55,7 +52,6 @@ const Projects = () => {
                             alt="Grain Production"
                             className="w-full h-full object-cover"
                         />
-                        
                     </div>
                 </div>
                 <div className="col-span-1">
@@ -65,7 +61,6 @@ const Projects = () => {
                             alt="Livestock Enrichment"
                             className="w-full h-full object-cover"
                         />
-                    
                     </div>
                 </div>
             </div>

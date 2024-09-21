@@ -23,7 +23,7 @@ function App() {
     <Info/>
     <Verticalscroll/>
     <Faq/>
-    <Timeline/>
+    {/* <Timeline/> */}
     <Feature/>
   
     <Projects/>
